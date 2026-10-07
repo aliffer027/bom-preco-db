@@ -1,0 +1,28 @@
+aliffer
+
+1. as entidades (as "coisas" sobre as quais o negócio guarda dados): por exemplo, clientes;
+
+Clientes
+Produtos
+Vendas
+Fornecedores
+Estoque
+
+2. Os dados de cada entidade;
+clientes:(Nome, CPF, Numero, Cidade).
+Produto:(Nome, Preço, Quantidade, Estoque).
+vendas:(Data, identificação do cliente, Produto, Quantidade, Preço, Fornecedor).
+Fornecedores:(Nome, identificação Produto).
+Estoque:(Produto, Quantidade, Observação)
+
+3. as regras de negócio que você consegue deduzir (ou perguntas que faria ao dono). 
+
+.Todo cliente precisa ter cadastro único
+.Os dados dos clientes devem ser protegidos	
+.O CPF tem que ser único
+.Cada produto precisa ter um  preço único
+.Não pode ter numero menor de 0 
+.Não pode ter valores menor de 0
+.quantidades não  pode ter números quebrados
+.para cada fornecedor tem que ter salvo(Nome da empresa, CNPJ, Telefone, Endereço etc...) 
+.para cada fornecedor tem que ter salvo(Nome, telefone, e-mail, endereço, ponto de referencia etc...)
